@@ -1,0 +1,8 @@
+# Versions the labs were verified with (Linux x86-64, Python 3.13, CPU only).
+# On Linux, the PyPI torch wheel also installs Triton.
+torch==2.15.0
+triton==3.9.0
+tilelang==0.1.15
+numpy
+pytest
+ninja            # torch.utils.cpp_extension builds (Week 2, Week 13 GPU check)
