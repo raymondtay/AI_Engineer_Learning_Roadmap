@@ -1,0 +1,19 @@
+# Versions the labs were verified with (2-core CPU VM, Python 3.13).
+# Lower versions probably work; these are the ones actually tested.
+numpy==2.5.3
+pandas==3.0.5
+pyarrow==26.0.0
+duckdb==2.0.0
+scipy==1.18.1
+pillow==12.3.0
+pytest==9.1.1
+# CPU wheel; on a CUDA box install the matching CUDA build from pytorch.org instead
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0
+
+# ---- optional ------------------------------------------------------------
+# Week 2 Spark path (also needs Java 17+ on PATH; verified with OpenJDK 21); tests marked `spark` skip without it
+pyspark==4.2.1
+# Week 6 compares your filter thresholds with datatrove's defaults (read from its source)
+# pip install datatrove==0.10.1 --no-deps
+# Week 17 Rust hot path: install Rust with rustup (cargo); tests marked `rust` skip without it

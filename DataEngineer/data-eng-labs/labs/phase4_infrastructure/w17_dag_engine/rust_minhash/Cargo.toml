@@ -1,0 +1,12 @@
+[package]
+name = "rust_minhash"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+# std only: no crates.io access needed
+[profile.release]
+opt-level = 3

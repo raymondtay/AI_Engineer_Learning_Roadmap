@@ -1,0 +1,12 @@
+data-eng-labs test results — 2026-10-29 — 2 cores, Python 3.13.18, CPU only
+
+## LAB=solution pytest -q -rs
+........................................................................ [ 67%]
+...................................                                      [100%]
+107 passed in 85.70s (0:01:25)
+
+## LAB=exercise pytest -q  (unfinished exercises must fail)
+92 failed, 6 passed, 9 errors in 23.13s
+
+## tools/make_exercises.py --check
+checked exercises; 82 TODO blocks
